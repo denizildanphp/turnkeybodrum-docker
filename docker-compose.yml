@@ -1,0 +1,22 @@
+version: "3.8"
+services:
+  site:
+      build: ./turnkeybodrum.com
+      working_dir: /var/www
+      ports:
+        - "8100:8000"
+      volumes:
+        - ./turnkeybodrum.com:/var/www
+      command: sh -c "composer install --ignore-platform-reqs && php artisan serve --host=0.0.0.0 --port=8000"
+      extra_hosts:
+        - "host.docker.internal:host-gateway"
+  crm:
+      build: ./crm.turnkeybodrum.com
+      working_dir: /var/www
+      ports:
+        - "8101:8000"
+      volumes:
+        - ./crm.turnkeybodrum.com:/var/www
+      command: sh -c "composer install --ignore-platform-reqs && php artisan serve --host=0.0.0.0 --port=8000"
+      extra_hosts:
+        - "host.docker.internal:host-gateway"
