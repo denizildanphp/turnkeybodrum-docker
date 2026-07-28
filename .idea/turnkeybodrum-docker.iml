@@ -241,6 +241,8 @@
       <excludeFolder url="file://$MODULE_DIR$/turnkeybodrum.com/vendor/tijsverkoyen/css-to-inline-styles" />
       <excludeFolder url="file://$MODULE_DIR$/turnkeybodrum.com/vendor/vlucas/phpdotenv" />
       <excludeFolder url="file://$MODULE_DIR$/turnkeybodrum.com/vendor/voku/portable-ascii" />
+      <excludeFolder url="file://$MODULE_DIR$/turnkeybodrum.com/storage/app" />
+      <excludeFolder url="file://$MODULE_DIR$/turnkeybodrum.com/storage/framework" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
